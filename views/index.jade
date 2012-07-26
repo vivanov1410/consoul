@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  div#console-area
+    input(id= "it-line", type= "textbox")
+    input(id= "command-line", type= "textbox", autofocus, spellcheck= "false")
+    //button(id= "enter") Enter

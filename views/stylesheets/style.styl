@@ -1,0 +1,79 @@
+console_width = 600px
+console_height = 200px
+
+@font-face
+ font-family PressStart
+ font-style normal
+ src url(fonts/PressStart2P-Regular.ttf)
+
+@keyframes greenPulse
+  from
+    background-color: #749a02
+    -webkit-box-shadow: 0 0 9px #333
+  50%
+    background-color: #91bd09
+    -webkit-box-shadow: 0 0 18px #91bd09
+  to
+    background-color: #749a02
+    -webkit-box-shadow: 0 0 9px #333
+
+body
+  padding: 20px
+  font: 20px PressStart, Consolas, "Lucida Grande", Helvetica, Arial, sans-serif
+  text-align: center
+  background: #333;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+
+  //background: url(../images/background02.gif) repeat
+a
+  color: #00B7FF
+
+h1
+  color white
+
+#console-area
+  margin: 50px auto
+  display: block
+  width: console_width
+
+#command-line
+  width: console_width
+  height: console_height
+  font: 20px PressStart
+  color: black
+  padding: 6px
+  background-color: #91bd09
+  -webkit-box-shadow: 0 0 18px #91bd09
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border: none
+  text-align: center
+  outline: none
+
+#it-line
+  width: console_width
+  height: 100px
+  font: 20px PressStart
+  color: black
+  background-color: #333
+  border: none
+  text-align: center
+  outline: none
+
+#enter
+  width: 150px
+  height: 100px
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,.25)), to(transparent));
+  text-shadow: 0 -1px 5px rgba(0,0,0,.25);
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border: 5px solid rgba(0,0,0,.25);
+  -webkit-animation-name: greenPulse
+  -webkit-animation-duration: 2s
+  -webkit-animation-iteration-count: infinite
+#enter
+  background-color: #e22092
+#enter:hover
+  background-color: #c81e82
+
+

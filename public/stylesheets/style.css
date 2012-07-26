@@ -1,0 +1,145 @@
+@font-face {
+  font-family: PressStart;
+  font-style: normal;
+  src: url("fonts/PressStart2P-Regular.ttf");
+}
+body {
+  padding: 20px;
+  font: 20px PressStart, Consolas, "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  background: #333;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+a {
+  color: #00b7ff;
+}
+h1 {
+  color: #fff;
+}
+#console-area {
+  margin: 50px auto;
+  display: block;
+  width: 600px;
+}
+#command-line {
+  width: 600px;
+  height: 200px;
+  font: 20px PressStart;
+  color: #000;
+  padding: 6px;
+  background-color: #91bd09;
+  -webkit-box-shadow: 0 0 18px #91bd09;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border: none;
+  text-align: center;
+  outline: none;
+}
+#it-line {
+  width: 600px;
+  height: 100px;
+  font: 20px PressStart;
+  color: #000;
+  background-color: #333;
+  border: none;
+  text-align: center;
+  outline: none;
+}
+#enter {
+  width: 150px;
+  height: 100px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.25)), to(transparent));
+  text-shadow: 0 -1px 5px rgba(0,0,0,0.25);
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border: 5px solid rgba(0,0,0,0.25);
+  -webkit-animation-name: greenPulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+}
+#enter {
+  background-color: #e22092;
+}
+#enter:hover {
+  background-color: #c81e82;
+}
+@-moz-keyframes greenPulse {
+  0% {
+    background-color: #749a02;
+    -webkit-box-shadow: 0 0 9px #333;
+  }
+
+  50% {
+    background-color: #91bd09;
+    -webkit-box-shadow: 0 0 18px #91bd09;
+  }
+
+  100% {
+    background-color: #749a02;
+    -webkit-box-shadow: 0 0 9px #333;
+  }
+}
+@-webkit-keyframes greenPulse {
+  0% {
+    background-color: #749a02;
+    -webkit-box-shadow: 0 0 9px #333;
+  }
+
+  50% {
+    background-color: #91bd09;
+    -webkit-box-shadow: 0 0 18px #91bd09;
+  }
+
+  100% {
+    background-color: #749a02;
+    -webkit-box-shadow: 0 0 9px #333;
+  }
+}
+@-o-keyframes greenPulse {
+  0% {
+    background-color: #749a02;
+    -webkit-box-shadow: 0 0 9px #333;
+  }
+
+  50% {
+    background-color: #91bd09;
+    -webkit-box-shadow: 0 0 18px #91bd09;
+  }
+
+  100% {
+    background-color: #749a02;
+    -webkit-box-shadow: 0 0 9px #333;
+  }
+}
+@-ms-keyframes greenPulse {
+  0% {
+    background-color: #749a02;
+    -webkit-box-shadow: 0 0 9px #333;
+  }
+
+  50% {
+    background-color: #91bd09;
+    -webkit-box-shadow: 0 0 18px #91bd09;
+  }
+
+  100% {
+    background-color: #749a02;
+    -webkit-box-shadow: 0 0 9px #333;
+  }
+}
+@keyframes greenPulse {
+  0% {
+    background-color: #749a02;
+    -webkit-box-shadow: 0 0 9px #333;
+  }
+
+  50% {
+    background-color: #91bd09;
+    -webkit-box-shadow: 0 0 18px #91bd09;
+  }
+
+  100% {
+    background-color: #749a02;
+    -webkit-box-shadow: 0 0 9px #333;
+  }
+}
