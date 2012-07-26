@@ -4,6 +4,25 @@
   "description": "Dynamic IDE. Code lives here",
   "homepage": "http://github.com/vivanov1410/consoul",
   "author": "Viacheslav Ivanov <slava.eth@gmail.com>",
+  "maintainers": [{
+    "name": "Viacheslav Ivanov",
+    "email": "slava.eth@gmail.com"
+  }],
+  "contributors": [{
+    "name": "Svetlana Romaniuk",
+    "email": "svetlanakirilova2012@gmail.com"
+  }],
+  "licenses": [{
+      "type": "MIT",
+      "url": "http://mths.be/mit"
+  }],
+  "bugs": {
+    "url": "https://github.com/vivanov1410/consoul/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vivanov1410/consoul.git"
+  },
   "dependencies": {
     "express": "3.0.0beta7",
     "jade": "*",
@@ -16,7 +35,7 @@
     "should": "*"
   },
   "engines": {
-    "node": "*",
+    "node": ">= 0.8.4",
     "npm": "*"
   },
   "scripts": {
