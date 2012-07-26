@@ -1,13 +1,12 @@
-Music Arena
-===========
+Consoul
+=======
 
-Social game for people that enjoy music
+Dynamic IDE. Code lives here
 
 Introducing our team:
 
 * Slava "Karnak" Ivanov - developer
 * Svetik "Siya" Romaniuk - ux, qa
-* Alex "Canadrinum" Volchkov - sound
 
 ## Install
 
@@ -25,7 +24,7 @@ node server
 Run tests:
 
 ```
-npm test
+mocha test
 ```
 
 ## Deploy
