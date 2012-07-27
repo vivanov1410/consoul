@@ -1,7 +1,17 @@
 express = require("express")
 routes = require("./routes")
 http = require("http")
+util = require("util")
 logger = require("./lib/logger")
+everyauth = require("everyauth")
+
+everyauth.twitter
+.consumerKey('IPRIsihBy75vv4zDJrmeeQ')
+.consumerSecret('T8VYXk56XrQ2N2WFw31z1EZkjdfmWbE8TU5rAdCsOA')
+.findOrCreateUser (session, token, secret, user) ->
+  promise = @.Promise().fulfill user
+  logger.info "User logged in by twitter #{user}"
+.redirectPath '/main'
 
 app = express()
 
@@ -15,6 +25,7 @@ app.configure ->
   app.use express.methodOverride()
   app.use express.cookieParser("your secret here")
   app.use express.session()
+  app.use everyauth.middleware()
   app.use app.router
   app.use require("stylus").middleware(src: __dirname + "/views", dest: __dirname + "/public")
   app.use express.static(__dirname + "/public")
