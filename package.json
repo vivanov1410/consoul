@@ -1,21 +1,27 @@
 {
   "name": "consoul",
-  "version": "0.0.1",
+  "version": "0.0.1-3",
   "description": "Dynamic IDE. Code lives here",
   "homepage": "http://github.com/vivanov1410/consoul",
   "author": "Viacheslav Ivanov <slava.eth@gmail.com>",
-  "maintainers": [{
-    "name": "Viacheslav Ivanov",
-    "email": "slava.eth@gmail.com"
-  }],
-  "contributors": [{
-    "name": "Svetlana Romaniuk",
-    "email": "svetlanakirilova2012@gmail.com"
-  }],
-  "licenses": [{
+  "maintainers": [
+    {
+      "name": "Viacheslav Ivanov",
+      "email": "slava.eth@gmail.com"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Svetlana Romaniuk",
+      "email": "svetlanakirilova2012@gmail.com"
+    }
+  ],
+  "licenses": [
+    {
       "type": "MIT",
       "url": "http://mths.be/mit"
-  }],
+    }
+  ],
   "bugs": {
     "url": "https://github.com/vivanov1410/consoul/issues"
   },
@@ -29,17 +35,19 @@
     "stylus": "*",
     "coffee-script": "1.3.3",
     "winston": "*",
-    "everyauth": "*"
+    "everyauth": "*",
+    "share": "*"
   },
   "devDependencies": {
     "mocha": "*",
     "should": "*"
   },
   "engines": {
-    "node": ">= 0.8.4",
+    "node": "0.6.x",
     "npm": ">= 1.1.41"
   },
   "scripts": {
-    "start": "node server"
-  }
+    "start": "node server.js"
+  },
+  "subdomain": "consoul"
 }

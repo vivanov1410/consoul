@@ -18,7 +18,6 @@ console_height = 200px
     -webkit-box-shadow: 0 0 9px #333
 
 body
-  padding: 25px
   font: 20px PressStart, Consolas, "Lucida Grande", Helvetica, Arial, sans-serif
   text-align: center
   background: #333;
@@ -76,4 +75,57 @@ h1
 #enter:hover
   background-color: #c81e82
 
+area_margin = 10px
+//#area-wrapper
+//  display: inline
+//  font: 10px PressStart
+#input-area, #output-area
+  width: 30%
+  height: 700px
+  font: 15px Consolas
+  outline: none
+  border: none
+  -webkit-box-shadow: 0 0 18px #91bd09
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+#input-area
+  float: left
+  margin-left: area_margin
+#output-area
+  float: right
+  margin-right: area_margin
+  background-color: #333
 
+#code-zone
+  margin: 30px 20px
+  padding: 0 50px 0 50px
+  text-align: left
+#editor, #output
+  //position: absolute
+  width: 600px
+  height: 700px
+  outline: none
+  font: 15px Consolas white
+#editor
+  background: white
+  text-shadow: none
+  border: none
+  float: left
+  -webkit-box-shadow: 0 0 18px grey
+#output
+  background: white
+  text-shadow: none
+  border: none
+  float: right
+  -webkit-box-shadow: 0 0 18px grey
+  left: 800px
+
+iframe
+  width: 580px
+  height: 500px
+  float: right
+
+#preview .demo
+  border: 1px solid #9C9898
+  -webkit-box-shadow: 0 0 8px 2px rgba(0,0,0,0.2)
+  -moz-box-shadow: 0 0 8px 2px rgba(0,0,0,0.2)

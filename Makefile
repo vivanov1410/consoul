@@ -2,9 +2,9 @@ test:
 	mocha --colors --require should --reporter spec --compilers coffee:coffee-script
 
 watch:
-	coffee --watch --lint --output public/javascripts --compile lib/consoul.coffee
+	coffee --watch --lint --output public/javascripts --compile src
 
 start:
-	nodemon --watch routes app.coffee
+	nodemon --watch routes --watch ./ --watch controllers app.coffee
 
 .PHONY: test

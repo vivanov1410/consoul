@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  div#code-zone
+    div#editor
+    p
+      iframe#preview.demo(scrolling='no')
+  script(src='javascripts/canvas.js')
+    //canvas WOW! Back off! This browser doesn't support canvas

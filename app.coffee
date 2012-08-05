@@ -1,9 +1,10 @@
 express = require("express")
-routes = require("./routes")
+routes = require("./controllers/routes")
 http = require("http")
 util = require("util")
 logger = require("./lib/logger")
 everyauth = require("everyauth")
+sharejs = require('share')
 
 everyauth.twitter
 .consumerKey('IPRIsihBy75vv4zDJrmeeQ')
@@ -33,6 +34,10 @@ app.configure ->
 app.configure "development", ->
   app.use express.errorHandler()
 
-app.get "/", routes.index
+require('./controllers/routes') app
+
+options = {db: {type: 'none'}}
+sharejs.server.attach app, options
+
 http.createServer(app).listen app.get("port"), ->
   console.log "Express server listening on port " + app.get("port")
